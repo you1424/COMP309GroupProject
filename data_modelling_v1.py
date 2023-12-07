@@ -16,7 +16,7 @@ warnings.filterwarnings('ignore')
 
 
 # Set file path
-path = "D:/00 Centennial/01 Fall 2023/04 COMP309 - Data Warehouse & Predictive Anltcs/11 Group Project/"
+path = "D:/00 Centennial/01 Fall 2023/04 COMP309 - Data Warehouse & Predictive Anltcs/11 Group Project/COMP309GroupProject/"
 dataPath = os.path.join(path, "data/")
 pklPath = os.path.join(path, "pkl_files/")
 
