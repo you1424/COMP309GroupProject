@@ -31,7 +31,7 @@ def predict():
                 return jsonify({'error': 'No input data provided'})
 
             # Ensure that all required fields are present
-            required_fields = ['STATUS', 'LOCATION_TYPE', 'NEIGHBOURHOOD_158', 'BIKE_COLOUR', 'BIKE_SPEED', 'BIKE_MAKE', 'BIKE_MODEL', 'BIKE_COST']
+            required_fields = ['LOCATION_TYPE', 'NEIGHBOURHOOD_158', 'BIKE_COLOUR', 'BIKE_SPEED', 'BIKE_MAKE', 'BIKE_MODEL', 'BIKE_COST']
             for field in required_fields:
                 if field not in json_data:
                     return jsonify({'error': f'Missing required field: {field}'})
