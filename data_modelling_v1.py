@@ -28,11 +28,15 @@ pdata = pd.read_csv(fullpath)
 data_group2 = pd.DataFrame(pdata)
 
 # Data cleaning and preprocessing
-data_group2.drop(columns=['OBJECTID', 'EVENT_UNIQUE_ID', 'OCC_DATE', 'OCC_YEAR', 'OCC_MONTH', 'OCC_DOW', 'OCC_DAY',
+# data_group2.drop(columns=['OBJECTID', 'EVENT_UNIQUE_ID', 'OCC_DATE', 'OCC_YEAR', 'OCC_MONTH', 'OCC_DOW', 'OCC_DAY',
+#                           'OCC_DOY', 'OCC_HOUR', 'REPORT_DATE', 'REPORT_YEAR', 'REPORT_MONTH', 'REPORT_DOW',
+#                           'REPORT_DAY', 'REPORT_DOY', 'REPORT_HOUR', 'HOOD_158', 'NEIGHBOURHOOD_158', 'HOOD_140',
+#                           'NEIGHBOURHOOD_140', 'LONG_WGS84', 'LAT_WGS84'], inplace=True, errors='ignore')
+data_group2.drop(columns=['X', 'Y', 'PRIMARY_OFFENCE', 'PREMISES_TYPE', 'BIKE_TYPE',
+                          'OBJECTID', 'EVENT_UNIQUE_ID', 'OCC_DATE', 'OCC_YEAR', 'OCC_MONTH', 'OCC_DOW', 'OCC_DAY',
                           'OCC_DOY', 'OCC_HOUR', 'REPORT_DATE', 'REPORT_YEAR', 'REPORT_MONTH', 'REPORT_DOW',
-                          'REPORT_DAY', 'REPORT_DOY', 'REPORT_HOUR', 'HOOD_158', 'NEIGHBOURHOOD_158', 'HOOD_140',
+                          'REPORT_DAY', 'REPORT_DOY', 'REPORT_HOUR', 'HOOD_158', 'HOOD_140',
                           'NEIGHBOURHOOD_140', 'LONG_WGS84', 'LAT_WGS84'], inplace=True, errors='ignore')
-
 # Handle non-numeric values in 'DIVISION' column
 data_group2['DIVISION'] = data_group2['DIVISION'].str.replace('D', '')
 data_group2['DIVISION'].replace('NSA', np.nan, inplace=True)  # Replace 'NSA' with NaN
