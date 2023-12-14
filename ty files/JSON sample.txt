@@ -1,0 +1,38 @@
+[
+  {
+    "BIKE_MODEL": "SOHO S",
+    "PRIMARY_OFFENCE": "PROPERTY - FOUND",
+    "BIKE_MAKE": "TREK",
+    "LOCATION_TYPE": "Single Home, House (Attach Garage, Cottage, Mobile)",
+    "REPORT_DOY": 1,
+    "OCC_DOY": 1,
+    "PREMISES_TYPE": "House",
+    "REPORT_HOUR": 18,
+    "BIKE_SPEED": 1,
+    "BIKE_COST": 500
+    },
+  {
+    "BIKE_MODEL": "ELECTRIC",
+    "PRIMARY_OFFENCE": "THEFT UNDER",
+    "BIKE_MAKE": "E-BIKE",
+    "LOCATION_TYPE": "Parking Lots (Apt., Commercial Or Non-Commercial)",
+    "REPORT_DOY": 5,
+    "OCC_DOY": 357,
+    "PREMISES_TYPE": "Outside",
+    "REPORT_HOUR": 9,
+    "BIKE_SPEED": 23,
+    "BIKE_COST": 1000
+  },
+  {
+    "BIKE_MODEL": "UNKNOWN",
+    "PRIMARY_OFFENCE": "THEFT UNDER",
+    "BIKE_MAKE": "OTHER",
+    "LOCATION_TYPE": "Apartment (Rooming House, Condo)",
+    "REPORT_DOY": 93,
+    "OCC_DOY": 92,
+    "PREMISES_TYPE": "Apartment",
+    "REPORT_HOUR": 11,
+    "BIKE_SPEED": 0,
+    "BIKE_COST": 4000
+  }
+]
